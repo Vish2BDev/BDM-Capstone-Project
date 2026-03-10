@@ -1,0 +1,40 @@
+{
+  "conservative": {
+    "label": "Conservative",
+    "total": 7200000,
+    "repricing": 2800000,
+    "pricing_std": 1440000,
+    "sku_save": 1200000,
+    "inventory": 880000,
+    "liquidation": 850000,
+    "roi": "1,100%",
+    "payback": "3 weeks"
+  },
+  "base": {
+    "label": "Base Case",
+    "total": 8500000,
+    "repricing": 3500000,
+    "pricing_std": 1440000,
+    "sku_save": 1500000,
+    "inventory": 1050000,
+    "liquidation": 980000,
+    "roi": "1,600%",
+    "payback": "3 weeks"
+  },
+  "upside": {
+    "label": "Upside",
+    "total": 10000000,
+    "repricing": 4200000,
+    "pricing_std": 1440000,
+    "sku_save": 1800000,
+    "inventory": 1210000,
+    "liquidation": 1120000,
+    "roi": "2,400%",
+    "payback": "3 weeks"
+  },
+  "monthly_accumulation": {
+    "conservative": [0, 1.2, 3.8, 7.5, 12, 18, 25, 35, 45, 55, 65, 72],
+    "base": [0, 1.5, 4.5, 9, 15, 22, 32, 44, 55, 66, 76, 85],
+    "upside": [0, 2, 5.5, 11, 18, 27, 40, 54, 67, 80, 91, 100]
+  }
+}

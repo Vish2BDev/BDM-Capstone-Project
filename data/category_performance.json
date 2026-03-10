@@ -1,0 +1,8 @@
+[
+  { "category": "Fruits", "revenue": 8702387.85, "share": 36.3, "color": "#4A7C5E" },
+  { "category": "Vegetables", "revenue": 6294393.31, "share": 26.3, "color": "#2D5A3D" },
+  { "category": "Dairy", "revenue": 1463297.40, "share": 6.1, "color": "#C8922A" },
+  { "category": "Snacks", "revenue": 1030428.92, "share": 4.3, "color": "#E8A73A" },
+  { "category": "Other / Cleaned", "revenue": 1673318.27, "share": 7.0, "color": "#6B9E7A" },
+  { "category": "Unknown (orig)", "revenue": 6230000.00, "share": 20.0, "color": "#4A5568" }
+]

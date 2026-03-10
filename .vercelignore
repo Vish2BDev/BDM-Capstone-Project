@@ -1,0 +1,6 @@
+# Exclude large video files (host on YouTube/Drive instead)
+public/assets/proof/videos/
+public/assets/proof/*.mp4
+
+# Exclude non-essential large files
+public/assets/ada_visuals/category_mix_dashboard.html
