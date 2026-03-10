@@ -45,3 +45,9 @@ next-env.d.ts
 *.mov
 *.avi
 *.mkv
+
+# Research mirror (internal dev folder — not part of public project)
+research/
+
+# Raw transaction data (52K rows — academic use only, not for public repo)
+datasets/cleaned_sales.csv
