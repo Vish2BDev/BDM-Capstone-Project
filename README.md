@@ -11,7 +11,7 @@
 
 ## What this is
 
-Pure'O Naturals is a specialty organic retail store in Bangalore (Anjaneya Nagar branch). The owner had three recurring complaints: too many products, prices that keep changing, and vegetables going to waste before they sell.
+Pure'O Naturals is a specialty organic retail store in Hyderabad (Anjaneya Nagar branch). The owner had three recurring complaints: too many products, prices that keep changing, and vegetables going to waste before they sell.
 
 This project takes six months of raw point-of-sale data — 52,314 transactions across 183 days — and works through each complaint systematically. The result is a set of specific, numbered recommendations with projected financial impact.
 
