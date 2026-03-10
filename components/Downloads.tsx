@@ -6,7 +6,7 @@ const downloads = [
   {
     icon: '📄',
     name: 'Final Report',
-    format: 'PDF',
+    format: 'DOCX',
     size: '~2.4 MB',
     desc: '9-section consulting-grade report with full analysis, strategy, and financial projections.',
     href: '/assets/reports/22f1001645- Final_Report.docx',
@@ -110,7 +110,7 @@ export default function Downloads() {
               </div>
             </div>
             <a
-              href="https://github.com/yourhandle/pureo-naturals-bdm-capstone"
+              href="https://github.com/Vish2BDev/BDM-Capstone-Project"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 px-6 py-3 rounded-xl font-ui font-bold text-sm tracking-wide text-ink transition-all duration-200 hover:scale-105"

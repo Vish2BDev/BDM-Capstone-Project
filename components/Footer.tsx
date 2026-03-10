@@ -37,7 +37,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://github.com/yourhandle/pureo-naturals-bdm-capstone"
+                href="https://github.com/Vish2BDev/BDM-Capstone-Project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
@@ -117,7 +117,7 @@ export default function Footer() {
               <p className="font-mono text-xs text-silver/50">
                 <span className="text-sage">IIT Madras</span> · BDM Capstone<br />
                 Industry Partner: Pure&apos;O Naturals<br />
-                Data Period: Apr–Sep 2024
+                Data Period: Apr–Sep 2025
               </p>
             </div>
           </div>
