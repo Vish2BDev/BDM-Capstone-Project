@@ -19,21 +19,21 @@ const BASE_VIDEO_URL = 'https://github.com/Vish2BDev/BDM-Capstone-Project/releas
 
 const videos = [
   {
-    src: `${BASE_VIDEO_URL}/Owner%20Interaction%20Video_Actual.mp4`,
+    src: `${BASE_VIDEO_URL}/Owner_Interaction_Video_Actual.mp4`,
     title: 'Owner Interview — Primary Data Discussion',
     desc: '45-minute structured interview covering business pain points, data authorization, and operational context.',
     date: 'November 8, 2025',
     badge: 'PRIMARY EVIDENCE',
   },
   {
-    src: `${BASE_VIDEO_URL}/Store%20Tour%20-%20Overall%20Walkthrough.mp4`,
-    title: 'Store Walkthrough — Branch 0007',
+    src: `${BASE_VIDEO_URL}/Store_Tour_Overall_Walkthrough.mp4`,
+    title: 'Store Walkthrough — Anjaneya Nagar Branch',
     desc: 'Physical store tour documenting store layout, shelf organization, POS terminal, and product category placement.',
     date: 'November 8, 2025',
     badge: 'FIELD EVIDENCE',
   },
   {
-    src: `${BASE_VIDEO_URL}/Store%20Tour%20-%20Interaction%20with%20Cashier.mp4`,
+    src: `${BASE_VIDEO_URL}/Store_Tour_Interaction_with_Cashier.mp4`,
     title: 'POS System Demo — Data Collection Process',
     desc: 'Interaction with cashier demonstrating POS workflow and SalesDetail export process.',
     date: 'November 8, 2025',
