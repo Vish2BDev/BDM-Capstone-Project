@@ -15,30 +15,32 @@ const photos = [
   { src: '/assets/proof/photos/NOC Letter.jpg', caption: 'No Objection Certificate — Signed by Branch Owner', date: 'Nov 10, 2025', isNOC: true },
 ]
 
+const BASE_VIDEO_URL = 'https://github.com/Vish2BDev/BDM-Capstone-Project/releases/download/v1.0-videos'
+
 const videos = [
   {
-    src: '/assets/proof/videos/Owner Interaction Video_Actual.mp4',
+    src: `${BASE_VIDEO_URL}/Owner%20Interaction%20Video_Actual.mp4`,
     title: 'Owner Interview — Primary Data Discussion',
     desc: '45-minute structured interview covering business pain points, data authorization, and operational context.',
     date: 'November 8, 2025',
     badge: 'PRIMARY EVIDENCE',
   },
   {
-    src: '/assets/proof/videos/Store Tour - Overall Walkthrough.mp4',
+    src: `${BASE_VIDEO_URL}/Store%20Tour%20-%20Overall%20Walkthrough.mp4`,
     title: 'Store Walkthrough — Branch 0007',
     desc: 'Physical store tour documenting store layout, shelf organization, POS terminal, and product category placement.',
     date: 'November 8, 2025',
     badge: 'FIELD EVIDENCE',
   },
   {
-    src: '/assets/proof/videos/Store Tour - Interaction with Cashier.mp4',
+    src: `${BASE_VIDEO_URL}/Store%20Tour%20-%20Interaction%20with%20Cashier.mp4`,
     title: 'POS System Demo — Data Collection Process',
     desc: 'Interaction with cashier demonstrating POS workflow and SalesDetail export process.',
     date: 'November 8, 2025',
     badge: 'PROCESS DOC',
   },
   {
-    src: '/assets/proof/videos/Proof_Data_Acquisition_Process.mp4',
+    src: `${BASE_VIDEO_URL}/Proof_Data_Acquisition_Process.mp4`,
     title: 'Data Acquisition — Live POS Export',
     desc: 'Screen-recorded demonstration of exporting SalesDetail.rpt.csv files from the branch POS system.',
     date: 'November 8, 2025',
