@@ -120,7 +120,7 @@ export default function Strategy() {
                   ))}
                 </div>
 
-                <div className="formula-block">
+                <div className="formula-block" style={{ background: 'rgba(26,10,0,0.8)' }}>
                   <div className="text-silver/40 text-xs font-ui mb-1 uppercase tracking-widest">Shewhart Control Limits</div>
                   <div>UCL = X̄ + 2.66 × MR̄</div>
                   <div className="text-saffron/70">LCL = X̄ − 2.66 × MR̄</div>
@@ -156,7 +156,7 @@ export default function Strategy() {
                 </div>
 
                 <div className="rounded-xl overflow-hidden border" style={{ borderColor: 'rgba(26,58,106,0.4)' }}>
-                  <table className="data-table" style={{ background: 'rgba(6,14,26,0.5)' }}>
+                  <table className="data-table data-table-dark" style={{ background: 'rgba(6,14,26,0.5)' }}>
                     <thead><tr><th style={{ background: 'rgba(26,58,106,0.8)' }}>Type</th><th style={{ background: 'rgba(26,58,106,0.8)' }}>Z</th><th style={{ background: 'rgba(26,58,106,0.8)' }}>SL</th></tr></thead>
                     <tbody>
                       {slTiers.map((t) => (
