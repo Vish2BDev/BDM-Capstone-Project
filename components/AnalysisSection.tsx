@@ -14,7 +14,7 @@ interface ChartGalleryItem {
 const allCharts: ChartGalleryItem[] = [
   { src: '/assets/charts/Chart_4_1_Daily_Revenue_Histogram.png', alt: 'Daily Revenue Histogram', caption: 'Daily Revenue Distribution — Strongly Right-Skewed (Skewness: 6.1)', figNum: 'FIG 4.1' },
   { src: '/assets/charts/Chart_4_2_Monthly_Revenue_Trends.png', alt: 'Monthly Revenue Trends', caption: 'Monthly Revenue Trend · Apr–Sep 2025 · Peak: July ₹48.1L', figNum: 'FIG 4.2' },
-  { src: '/assets/charts/Chart_4_3_Category_Performance.png', alt: 'Category Performance', caption: 'Category Revenue Mix — Fruits 36.3%, Vegetables 26.3%', figNum: 'FIG 4.3' },
+  { src: '/assets/charts/Chart_4_3_Category_Performance.png', alt: 'Category Performance', caption: 'Category Revenue Mix — Fruits 36.3%, Vegetables 35.3%', figNum: 'FIG 4.3' },
   { src: '/assets/charts/Chart_4_4_ABC_Pareto.png', alt: 'ABC Pareto Analysis', caption: 'ABC Pareto Curve — Class A (20%) drives 70.2% of revenue', figNum: 'FIG 4.4' },
   { src: '/assets/charts/Chart_4_5_Volatility_Distribution.png', alt: 'Volatility Distribution', caption: 'CV Distribution — 746 SKUs flagged as High-Volatility (CV >25%)', figNum: 'FIG 4.5' },
   { src: '/assets/ada_visuals/1. Daily Sales Variation ( Z-score) - Top SKU\'s - Figure_1.png', alt: 'Daily Sales Variation Z-Score', caption: 'Daily Sales Z-Score Heatmap — Top High-Volatility SKUs', figNum: 'FIG 5.1' },
@@ -41,7 +41,7 @@ const xmrCharts: ChartGalleryItem[] = [
   { src: '/assets/xmr/X Chart , MR Chart - Baby Orange.png', alt: 'Baby Orange X-MR', caption: 'Baby Orange — X Chart & MR Chart', figNum: 'X-MR 5' },
   { src: '/assets/xmr/X Chart , MR Chart - Onion.png', alt: 'Onion X-MR', caption: 'Onion — X Chart & MR Chart (High Volume Staple)', figNum: 'X-MR 6' },
   { src: '/assets/xmr/X Chart , MR Chart - Potato.png', alt: 'Potato X-MR', caption: 'Potato — X Chart & MR Chart', figNum: 'X-MR 7' },
-  { src: '/assets/xmr/X Chart , MR Chart - Carrot.png', alt: 'Carrot X-MR', caption: 'Carrot — X Chart & MR Chart', figNum: 'X-MR 8' },
+  { src: '/assets/xmr/X Chart , MR Chart -Carrot.png', alt: 'Carrot X-MR', caption: 'Carrot — X Chart & MR Chart', figNum: 'X-MR 8' },
   { src: '/assets/xmr/X Chart , MR Chart - Ladies Finger.png', alt: 'Ladies Finger X-MR', caption: 'Ladies Finger — X Chart & MR Chart', figNum: 'X-MR 9' },
 ]
 
