@@ -1,6 +1,6 @@
 # Pure'O Naturals — Branch Sales Analysis
 
-**IIT Madras BDM Capstone · Student 22f1001645 · April–September 2025**
+**IIT Madras BDM Capstone · 22f1001645 · April–September 2025**
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](scripts/)
 [![pandas](https://img.shields.io/badge/pandas-2.x-150458?logo=pandas&logoColor=white)](scripts/)
@@ -169,7 +169,7 @@ Scripts expect the raw data files in a `data/` directory. Summary output CSVs la
 
 BDM (Business Data Management) is a capstone course at IIT Madras. The project requirement is to identify a real business, collect primary data, apply appropriate analytical methods, and produce actionable recommendations.
 
-Pure'O Naturals gave access to their POS export files for this study. The analysis and recommendations are the student's own work.
+Pure'O Naturals gave access to their POS export files for this study. The analysis and recommendations is what I have done.
 
 ---
 
