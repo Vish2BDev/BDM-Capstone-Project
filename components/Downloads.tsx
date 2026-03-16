@@ -4,7 +4,7 @@ import ScrollReveal from './ScrollReveal'
 
 const downloads = [
   {
-    icon: '📄',
+    icon: 'report',
     name: 'Final Report',
     format: 'DOCX',
     size: '~2.4 MB',
@@ -15,7 +15,7 @@ const downloads = [
     primary: true,
   },
   {
-    icon: '📊',
+    icon: 'chart',
     name: 'Midterm Report',
     format: 'PDF',
     size: '~1.8 MB',
@@ -25,17 +25,17 @@ const downloads = [
     badgeColor: '#C8922A',
   },
   {
-    icon: '📝',
+    icon: 'proposal',
     name: 'BDM Proposal',
     format: 'PDF',
     size: '~900 KB',
-    desc: 'Problem identification, SMART objectives, methodology design, and WBS/Gantt.',
+    desc: 'Problem identification, SMART objectives, and methodology design.',
     href: '/assets/reports/22f1001645- BDM_Proposal_.pdf',
     badge: 'PROPOSAL',
     badgeColor: '#4A7C5E',
   },
   {
-    icon: '📊',
+    icon: 'presentation',
     name: 'Viva Presentation',
     format: 'PPTX',
     size: '~5.2 MB',
@@ -45,7 +45,7 @@ const downloads = [
     badgeColor: '#9B59B6',
   },
   {
-    icon: '🐍',
+    icon: 'code',
     name: 'EDA Python Script',
     format: 'PY',
     size: '~48 KB',
@@ -55,7 +55,7 @@ const downloads = [
     badgeColor: '#3498DB',
   },
   {
-    icon: '🐍',
+    icon: 'code',
     name: 'ADA Pipeline',
     format: 'PY',
     size: '~32 KB',
@@ -65,6 +65,46 @@ const downloads = [
     badgeColor: '#3498DB',
   },
 ]
+
+function DownloadIcon({ type, color }: { type: string; color: string }) {
+  if (type === 'report' || type === 'proposal') {
+    return (
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="16" y1="13" x2="8" y2="13"/>
+        <line x1="16" y1="17" x2="8" y2="17"/>
+      </svg>
+    )
+  }
+
+  if (type === 'chart') {
+    return (
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <line x1="18" y1="20" x2="18" y2="10"/>
+        <line x1="12" y1="20" x2="12" y2="4"/>
+        <line x1="6" y1="20" x2="6" y2="14"/>
+      </svg>
+    )
+  }
+
+  if (type === 'presentation') {
+    return (
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M3 3h18v12H3z"/>
+        <path d="M8 21h8"/>
+        <path d="M12 15v6"/>
+      </svg>
+    )
+  }
+
+  return (
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M16 18l6-6-6-6"/>
+      <path d="M8 6l-6 6 6 6"/>
+    </svg>
+  )
+}
 
 export default function Downloads() {
   return (
@@ -136,7 +176,9 @@ export default function Downloads() {
               >
                 {/* Icon + Badge */}
                 <div className="flex items-start justify-between mb-4">
-                  <span className="text-4xl">{file.icon}</span>
+                  <span className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ background: `${file.badgeColor}18` }}>
+                    <DownloadIcon type={file.icon} color={file.badgeColor} />
+                  </span>
                   <div className="flex items-center gap-2">
                     <span
                       className="badge text-xs"

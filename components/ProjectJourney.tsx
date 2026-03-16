@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import ScrollReveal from './ScrollReveal'
 
 const stages = [
@@ -9,9 +8,9 @@ const stages = [
     title: 'Proposal',
     date: 'October 2025',
     deliverable: 'Problem identification, SMART objectives, methodology design, and complete data authorization from branch owner.',
-    artifacts: ['WBS & Gantt Chart', '4 Problems Prioritized', 'Methodology Plan', 'Data Authorization — NOC', 'Literature Review', 'SMART Objectives'],
+    artifacts: ['4 Problems Prioritized', 'Methodology Plan', 'Data Authorization — NOC', 'Literature Review', 'SMART Objectives'],
     color: '#2D5A3D',
-    icon: '📝',
+    icon: 'proposal',
     link: '/assets/reports/22f1001645- BDM_Proposal_.pdf',
     linkLabel: 'View Proposal PDF',
   },
@@ -22,7 +21,7 @@ const stages = [
     deliverable: 'Full EDA complete, all 6 ADA techniques applied, volatility + margin analysis, 5 problems fully quantified.',
     artifacts: ['6 Section 6 Figures', 'X-MR Charts (20+)', 'Category Reclassification (98.5%)', 'Field Research + Videos', 'ABC/Pareto Analysis', 'CV Volatility Flagging'],
     color: '#C8922A',
-    icon: '📊',
+    icon: 'midterm',
     current: true,
     link: '/assets/reports/22f1001645- Midterm_Report.pdf',
     linkLabel: 'View Midterm PDF',
@@ -34,11 +33,40 @@ const stages = [
     deliverable: '3-pillar strategy, ₹72–100L financial projections, master 9-section consulting report, portfolio website.',
     artifacts: ['9-Section Consulting Report', 'Full Visualization Gallery', 'Vercel Deployment', '₹72–100L Annual Roadmap', '12-Week Implementation Plan', 'Risk Sensitivity Analysis'],
     color: '#1A3A6A',
-    icon: '🎯',
+    icon: 'final',
     link: '/assets/reports/22f1001645- Final_Report.docx',
     linkLabel: 'Download Final Report',
   },
 ]
+
+function StageIcon({ type, color }: { type: string; color: string }) {
+  if (type === 'proposal') {
+    return (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="8" y1="13" x2="16" y2="13"/>
+        <line x1="8" y1="17" x2="13" y2="17"/>
+      </svg>
+    )
+  }
+
+  if (type === 'midterm') {
+    return (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <line x1="18" y1="20" x2="18" y2="10"/>
+        <line x1="12" y1="20" x2="12" y2="4"/>
+        <line x1="6" y1="20" x2="6" y2="14"/>
+      </svg>
+    )
+  }
+
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
+    </svg>
+  )
+}
 
 export default function ProjectJourney() {
   return (
@@ -99,10 +127,10 @@ export default function ProjectJourney() {
                     {/* Stage Header */}
                     <div className="flex items-start gap-4 mb-6">
                       <div
-                        className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl"
+                        className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0"
                         style={{ background: `${s.color}15` }}
                       >
-                        {s.icon}
+                        <StageIcon type={s.icon} color={s.color} />
                       </div>
                       <div>
                         <div className="font-mono text-xs mb-1" style={{ color: s.color }}>
@@ -151,30 +179,6 @@ export default function ProjectJourney() {
           </div>
         </div>
 
-        {/* WBS & Gantt Embed */}
-        <ScrollReveal>
-          <div>
-            <h3 className="font-ui font-bold text-ink text-lg tracking-wide mb-4 flex items-center gap-3">
-              <span className="text-gold">📐</span> Work Breakdown Structure &amp; Project Gantt
-            </h3>
-            <div
-              className="rounded-xl overflow-hidden border shadow-lg cursor-zoom-in chart-wrap"
-              style={{ borderColor: 'rgba(45,90,61,0.25)' }}
-            >
-              <Image
-                src="/assets/gantt/WBS & GANTT.png"
-                alt="Work Breakdown Structure & Project Gantt — 12-Week Implementation"
-                width={1200}
-                height={500}
-                className="responsive-img"
-                style={{ background: 'var(--parchment)' }}
-              />
-            </div>
-            <p className="font-mono text-slate/50 text-xs mt-2 text-center tracking-wide">
-              FIG. 2 — Work Breakdown Structure &amp; Project Gantt · 12-Week Capstone Timeline
-            </p>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   )

@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import ScrollReveal from './ScrollReveal'
 
 const pipelineSteps = [
@@ -370,30 +369,6 @@ export default function Methodology() {
           </div>
         </ScrollReveal>
 
-        {/* WBS & Gantt */}
-        <ScrollReveal>
-          <div>
-            <h3 className="font-ui font-bold text-cream text-lg tracking-wide mb-4">
-              Project Timeline — Work Breakdown Structure
-            </h3>
-            <div
-              className="rounded-xl overflow-hidden border"
-              style={{ borderColor: 'rgba(200,146,42,0.2)' }}
-            >
-              <Image
-                src="/assets/gantt/WBS & GANTT.png"
-                alt="Work Breakdown Structure & Project Gantt — 12-Week Implementation"
-                width={1200}
-                height={500}
-                className="responsive-img"
-                style={{ background: 'var(--parchment)' }}
-              />
-            </div>
-            <p className="font-mono text-silver/50 text-xs mt-2 text-center tracking-wide">
-              FIG. 2 — Work Breakdown Structure & Project Gantt · 12-Week Capstone Timeline
-            </p>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   )

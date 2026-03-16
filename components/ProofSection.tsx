@@ -8,9 +8,7 @@ const photos = [
   { src: '/assets/proof/photos/20251108_154336.jpg', caption: "Pure'O Naturals Store Front — Anjaneya Nagar, Bangalore", date: 'Nov 8, 2025' },
   { src: '/assets/proof/photos/20251108_155027.jpg', caption: 'Discussion with Branch Owner', date: 'Nov 8, 2025' },
   { src: '/assets/proof/photos/20251108_155038.jpg', caption: 'POS Terminal & Billing Counter', date: 'Nov 8, 2025' },
-  { src: '/assets/proof/photos/20251108_155044.jpg', caption: 'Store Interior — Vegetable & Fruit Aisle', date: 'Nov 8, 2025' },
   { src: '/assets/proof/photos/IMG20251108155936.jpg', caption: 'Interaction During Store Hours', date: 'Nov 8, 2025' },
-  { src: '/assets/proof/photos/IMG20251108155950_BURST000_COVER.jpg', caption: 'Owner Presenting Sales Reports', date: 'Nov 8, 2025' },
   { src: '/assets/proof/photos/IMG20251108155956.jpg', caption: 'SalesDetail Export — Data Documentation', date: 'Nov 8, 2025' },
   { src: '/assets/proof/photos/NOC Letter.jpg', caption: 'No Objection Certificate — Signed by Branch Owner', date: 'Nov 10, 2025', isNOC: true },
 ]
