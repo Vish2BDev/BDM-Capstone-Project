@@ -143,7 +143,14 @@ export default function Downloads() {
             style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(200,146,42,0.3)' }}
           >
             <div className="flex items-center gap-4">
-              <div className="text-4xl">⚡</div>
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center"
+                style={{ background: 'rgba(200,146,42,0.14)', border: '1px solid rgba(200,146,42,0.3)' }}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--saffron)" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
               <div>
                 <h3 className="font-ui font-bold text-cream text-lg">GitHub Repository</h3>
                 <p className="font-body text-silver/60 text-sm">Full source code, analysis scripts, and raw data · MIT License</p>

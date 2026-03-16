@@ -120,7 +120,7 @@ export default function ProjectJourney() {
                       className="px-4 py-2 text-center font-ui font-bold text-xs tracking-widest uppercase text-white"
                       style={{ background: s.color }}
                     >
-                      ★ Key Milestone
+                      Key Milestone
                     </div>
                   )}
                   <div className="p-8">
